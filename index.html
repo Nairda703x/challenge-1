@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1</title>
+    <link rel="stylesheet" href="pagina1.css">
+</head>
+<body>
+    <header> Encriptador / Desencriptador</header>
+    <div class="container">
+       <div class="input">
+            <textarea id="inputUsuario" placeholder="ingresa el texto aqui, no se aceptan caracteres especiales"></textarea>
+            <div class="botones">
+                <button class="boton_cifrar" id="cifrar" onclick="encriptar()">Encriptar</button>
+                <button class="boton_descifrar" id="descifrar" onclick="descifrar()">Desencriptar</button>
+            </div>
+       </div>
+       <div class="output">
+            <img src="/asets/Muñeco.png" href="Muñeco.png">
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            <div class="resultado" id="show" >
+                <p class="texto__output" id="resultados">Ningun mensaje fue encontrado</p>
+                <button onclick="copiarTexto()" ="boton_copiar">Copiar</button>    
+            </div>    
+       </div> 
+    </div>
+    <footer> 
+        <p>creado por Adrian Castelan 2024</p>
+    </footer>
+    <script src="logico.js"></script>
+</body>
+</html>
